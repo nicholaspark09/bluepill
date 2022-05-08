@@ -1,0 +1,71 @@
+ext.versions = [
+        'major':        0,
+        'minor':        0,
+        'patch':        1,
+        'nav':          "2.4.0",
+        'koin':         "2.0.1",
+        'compose':      "1.1.1",
+        'hilt':         "2.39.1",
+        'ktx':          "1.7.0",
+        'mockk':        "1.12.0",
+        'compileSdk':   31,
+        'minSdk':       21
+]
+
+def deps = [
+        'android': [
+                'appCompat':            "androidx.appcompat:appcompat:1.4.1",
+                'coreKtx':              "androidx.core:core-ktx:$versions.ktx",
+                'material':             "com.google.android.material:material:1.5.0"
+        ],
+        'compose': [
+                'base':             "androidx.compose.ui:ui:$versions.compose",
+                'tooling':          "androidx.compose.ui:ui-tooling:$versions.compose",
+                'preview':          "androidx.compose.ui:ui-tooling-preview:$versions.compose",
+                'foundation':       "androidx.compose.foundation:foundation:$versions.compose",
+                'lifecycle':        "androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1",
+                'material':         "androidx.compose.material:material:$versions.compose",
+                'activity':         "androidx.activity:activity-compose:$versions.compose"
+        ],
+        'navigation': [
+                'fragment':         "androidx.navigation:navigation-fragment-ktx:$versions.nav",
+                'ui':               "androidx.navigation:navigation-ui-ktx:$versions.nav",
+                'compose':          "androidx.navigation:navigation-compose:$versions.nav"
+        ],
+        'lifecycle': [
+                'viewmodel':        "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle"
+        ],
+        'retrofit': [
+                'core':         "com.squareup.retrofit2:retrofit:$versions.retrofit",
+                'converter':    "com.squareup.retrofit2:converter-gson:2.1.0"
+        ],
+        'dagger': [
+                'core':                 "com.google.dagger:dagger:$versions.dagger",
+                'android':              "com.google.dagger:dagger-android:$versions.dagger",
+                'androidSupport':       "com.google.dagger:dagger-android-support:$versions.dagger",
+                'compiler':             "com.google.dagger:dagger-compiler:$versions.dagger",
+                'androidCompiler':      "com.google.dagger:dagger-android-processor:$versions.dagger"
+        ],
+        'room': [
+                'core':                 "androidx.room:room-runtime:$versions.room",
+                'compiler':             "androidx.room:room-compiler:$versions.room",
+                'ktx':                  "androidx.room:room-ktx:$versions.room"
+        ],
+        'koin': [
+                'android':              "org.koin:koin-android:$versions.koin",
+                'viewmodel':            "org.koin:koin-androidx-viewmodel:$versions.koin",
+                'scope':                "org.koin:koin-androidx-scope:$versions.koin"
+        ],
+        'hilt': [
+                'base':                 "com.google.dagger:hilt-android:$versions.hilt",
+                'compiler':             "com.google.dagger:hilt-compiler:$versions.hilt",
+                'navigationFragment':   "androidx.hilt:hilt-navigation-fragment:1.0.0"
+        ],
+        'loggingInterceptor': "com.squareup.okhttp3:logging-interceptor:4.9.1",
+        'auth': [
+                'auth': "com.google.android.gms:play-services-auth:20.1.0"
+        ],
+        'mockk': "io.mockk:mockk:$versions.mockk"
+]
+
+ext.deps = deps

@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+    plugins {
+        id 'com.android.application' version '7.1.1'
+        id 'com.android.library' version '7.1.1'
+        id 'org.jetbrains.kotlin.android' version '1.6.20'
+        id 'org.jetbrains.kotlin.jvm' version '1.5.30'
+        id 'maven-publish'
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+}
+rootProject.name = "DebugTools"
+include ':app'
+include ':bluepill'
