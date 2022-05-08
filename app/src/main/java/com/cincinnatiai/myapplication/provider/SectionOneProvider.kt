@@ -1,6 +1,7 @@
 package com.cincinnatiai.myapplication.provider
 
 import android.content.SharedPreferences
+import com.cincinnatiai.bluepill.data.DeeplinkItem
 import com.cincinnatiai.bluepill.data.MenuItem
 import com.cincinnatiai.bluepill.data.SpinnerItem
 import com.cincinnatiai.bluepill.data.SwitchItem
@@ -16,6 +17,7 @@ class SectionOneProvider(
         val items = mutableListOf<MenuItem>()
         items.add(fetchEnvironment())
         items.add(fetchAnalyticsSetting())
+        items.add(fetchDeeplinkToGoogle())
         return items
     }
 
@@ -38,8 +40,15 @@ class SectionOneProvider(
         title = R.string.debug_analytics
     )
 
+    private suspend fun fetchDeeplinkToGoogle() = DeeplinkItem(
+        key = KEY_DEEPLINK,
+        title = R.string.debug_google_link_title,
+        url = "https://www.google.com"
+    )
+
     companion object {
         const val KEY_ENVIRONMENT = "key:environment"
         const val KEY_ANALYTICS = "key:analytics"
+        const val KEY_DEEPLINK = "key:deeplink"
     }
 }

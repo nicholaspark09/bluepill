@@ -11,9 +11,7 @@ object Phoenix {
     fun restart(context: Context, intent: Intent = getRestartIntent(context)) {
         intent.addFlags(FLAG_ACTIVITY_NEW_TASK or FLAG_ACTIVITY_CLEAR_TASK)
         context.startActivity(intent)
-        if (context is Activity) {
-            context.finish()
-        }
+        (context as? Activity)?.let { it.finish() }
         Runtime.getRuntime().exit(0)
     }
 

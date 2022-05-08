@@ -3,4 +3,5 @@
     <string name="open_debug_label">Open Debug Menu</string>
     <string name="environment">Environment</string>
     <string name="debug_analytics">Show Analytics Events</string>
+    <string name="debug_google_link_title">Deeplink to Google</string>
 </resources>

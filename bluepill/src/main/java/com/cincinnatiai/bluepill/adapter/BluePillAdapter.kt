@@ -2,6 +2,7 @@ package com.cincinnatiai.bluepill.adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.cincinnatiai.bluepill.adapter.viewholder.DeeplinkViewHolder
 import com.cincinnatiai.bluepill.adapter.viewholder.SpinnerViewHolder
 import com.cincinnatiai.bluepill.adapter.viewholder.SwitchViewHolder
 import com.cincinnatiai.bluepill.data.*
@@ -27,6 +28,7 @@ class BluePillAdapter(
         return when (viewType) {
             ITEM_TYPE_SWITCH -> SwitchViewHolder(parent, this)
             ITEM_TYPE_SPINNER -> SpinnerViewHolder(parent, this)
+            ITEM_TYPE_DEEPLINK -> DeeplinkViewHolder(parent)
             else -> throw IllegalArgumentException("No view type matching")
         }
     }
