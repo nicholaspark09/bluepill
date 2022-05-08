@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_default">8dp</dimen>
+    <dimen name="switch_row_height">56dp</dimen>
+    <dimen name="switch_row_padding">@dimen/padding_16</dimen>
+    <string name="redpill_restart">Restart App</string>
+</resources>

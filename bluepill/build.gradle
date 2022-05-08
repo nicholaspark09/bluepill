@@ -33,6 +33,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 dependencies {
@@ -47,13 +53,24 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
 
+task sourceJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier "sources"
+}
+
 afterEvaluate {
     publishing {
+        repositories {
+            mavenLocal()
+        }
         publications {
             release(MavenPublication) {
+//                from components.android
                 groupId = 'com.cincinnatiai'
                 artifactId = 'bluepill'
                 version = "${versions.major}.${versions.minor}.${versions.patch}"
+                artifact(sourceJar)
+                artifact("build/outputs/aar/bluepill-release.aar")
             }
         }
     }
