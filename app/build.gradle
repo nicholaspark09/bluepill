@@ -34,7 +34,7 @@ android {
 }
 
 dependencies {
-    implementation project(":bluepill")
+    implementation 'com.github.nicholaspark09:bluepill:0.0.13'
     implementation deps.lifecycle.viewmodel
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'

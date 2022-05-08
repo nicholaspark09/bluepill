@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.nicholaspark09:bluepill:0.0.13@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5be4cf2b92015280e62bd2f5907649fd/transformed/bluepill-0.0.13/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5be4cf2b92015280e62bd2f5907649fd/transformed/bluepill-0.0.13/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5be4cf2b92015280e62bd2f5907649fd/transformed/bluepill-0.0.13/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.nicholaspark09/bluepill/0.0.13/544f6442cc308a3e5e023cf46c882abfe25c94ce/bluepill-0.0.13-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
