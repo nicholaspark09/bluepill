@@ -1,0 +1,17 @@
+com.cincinnatiai.bluepill
+dimen margin_16
+dimen padding_16
+dimen padding_default
+dimen switch_row_height
+dimen switch_row_padding
+id deeplink_button
+id recyclerView
+id restartButton
+id row_switch
+id spinner
+id title
+layout activity_debug
+layout row_debug_deeplink
+layout row_debug_spinner
+layout row_debug_switch
+string redpill_restart

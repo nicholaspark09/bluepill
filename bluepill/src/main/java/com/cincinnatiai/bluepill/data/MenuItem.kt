@@ -41,5 +41,17 @@ data class SpinnerItem(
 
 }
 
+data class DeeplinkItem(
+    override val key: String,
+    @StringRes
+    override val title: Int,
+    val url: String,
+    override val itemViewType: Int = ITEM_TYPE_DEEPLINK
+) : MenuItem, Serializable {
+
+    override fun <T> getValue() = url as T
+}
+
 const val ITEM_TYPE_SWITCH = 0
 const val ITEM_TYPE_SPINNER = 1
+const val ITEM_TYPE_DEEPLINK = 2

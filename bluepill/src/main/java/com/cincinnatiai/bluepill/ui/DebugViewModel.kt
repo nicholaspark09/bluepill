@@ -6,13 +6,11 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.cincinnatiai.bluepill.BluePillLibrary
 import com.cincinnatiai.bluepill.data.MenuItem
-import com.cincinnatiai.bluepill.repository.MenuRepository
 import com.cincinnatiai.bluepill.repository.MenuRepositoryContract
-import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 
-class DebugViewModel : ViewModel()
-{
+class DebugViewModel : ViewModel() {
+
     private val repo: MenuRepositoryContract by lazy {
         BluePillLibrary.getInstance().menuRepository
     }

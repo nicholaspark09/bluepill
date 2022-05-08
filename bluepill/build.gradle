@@ -63,16 +63,6 @@ afterEvaluate {
         repositories {
             mavenLocal()
         }
-//        publications {
-//            release(MavenPublication) {
-////                from components.android
-//                groupId = 'com.cincinnatiai'
-//                artifactId = 'bluepill'
-//                version = "${versions.major}.${versions.minor}.${versions.patch}"
-//                artifact(sourceJar)
-//                artifact("build/outputs/aar/bluepill-release.aar")
-//            }
-//        }
         publications {
             release(MavenPublication) {
                 from components.release

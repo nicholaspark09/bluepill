@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.225" />
         <entry key="bluepill/src/main/res/layout/activity_debug.xml" value="0.1" />
+        <entry key="bluepill/src/main/res/layout/row_debug_deeplink.xml" value="0.1" />
         <entry key="bluepill/src/main/res/layout/row_debug_spinner.xml" value="0.335" />
         <entry key="bluepill/src/main/res/layout/row_debug_switch.xml" value="0.14175724637681159" />
       </map>
