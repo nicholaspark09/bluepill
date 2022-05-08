@@ -1,0 +1,158 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.cincinnatiai",
+    "module": "bluepill",
+    "version": "0.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "7.1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.6.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "bluepill-0.0.1.aar",
+          "url": "bluepill-0.0.1.aar",
+          "size": 46797,
+          "sha512": "dd69dcfdab29e4273f44e2ace64f31f258dda21fa163e432d8da187a604479eb5d83039548bb0693d443e9c243950998c6f485c8d9ce3365eca643c4efc28366",
+          "sha256": "a90b6911373960bcbc224fe23b2f28c73cc37a6959e3ec5050efa7f5247bc9fc",
+          "sha1": "81aa4f04a5889a0b191de6fc5849aea51fa7866d",
+          "md5": "5be0eacaad60c91460d465c063cbeda9"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "7.1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.6.20"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-fragment-ktx",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.5.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "bluepill-0.0.1.aar",
+          "url": "bluepill-0.0.1.aar",
+          "size": 46797,
+          "sha512": "dd69dcfdab29e4273f44e2ace64f31f258dda21fa163e432d8da187a604479eb5d83039548bb0693d443e9c243950998c6f485c8d9ce3365eca643c4efc28366",
+          "sha256": "a90b6911373960bcbc224fe23b2f28c73cc37a6959e3ec5050efa7f5247bc9fc",
+          "sha1": "81aa4f04a5889a0b191de6fc5849aea51fa7866d",
+          "md5": "5be0eacaad60c91460d465c063cbeda9"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "bluepill-0.0.1-sources.jar",
+          "url": "bluepill-0.0.1-sources.jar",
+          "size": 11837,
+          "sha512": "8247df0662997f3191344fd7077e362e916c7379a836a93aeca2df752d9836819403b95eac2b16a4e8d6b36a4190c0934a84a1cffb0ed827f1a678f40aedac63",
+          "sha256": "0aa7dd5d79ef6696888759f1f62ff529bc4ef61428482bec26725d516bd23fc3",
+          "sha1": "beadc32a23de3d897070b5049c80253f3d9f3596",
+          "md5": "d322b54469b80ecdeaf3cf2d7b194501"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "bluepill-0.0.1-javadoc.jar",
+          "url": "bluepill-0.0.1-javadoc.jar",
+          "size": 386935,
+          "sha512": "1870a66b8890f825b1c81996fea38301622ece722f30aebf3d392a1a18cad9363c84ced09c0668a55d7b99fb10b4371c8ebb1cc318024647a5284e18c1b8dc5b",
+          "sha256": "730d8a5086d45db33bc1b28729ddf7322d649a91a81413d54a2ba88021f2918f",
+          "sha1": "69789634ad89b3c31eeb47729a57679f9a9d32e3",
+          "md5": "bed0edc9b5a4ab638df2de665d012ab0"
+        }
+      ]
+    }
+  ]
+}
